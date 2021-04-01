@@ -54,9 +54,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script><!--[if 
 <pre class="highlight listingblock"><code class="plaintext language-plaintext">FT.ADD inventory inventory:7:B5 1.0 FIELDS atp 20 allocated 16</code></pre>
 <pre class="highlight listingblock"><code class="plaintext language-plaintext">XADD inventory-stream * id 7:B5 atp 20 allocated 16</code></pre></section>
 <section id="_querying_inventory"><h2>Querying Inventory</h2><div class="paragraph"><p>Availability lookup</p></div>
-<pre class="highlight listingblock"><code class="plaintext language-plaintext">FT.GET inventory inventory:7:B5</code></pre></section>
+<pre class="highlight listingblock"><code class="plaintext language-plaintext">FT.GET inventory inventory:662:UL5Y5E</code></pre></section>
 <section id="_querying_inventory_2"><h2>Querying Inventory</h2><div class="paragraph"><p>Local availability</p></div>
-<pre class="highlight listingblock"><code class="plaintext language-plaintext">FT.SEARCH inventory "@location:{-118.2 34.0 10 mi}"</code></pre></section>
+<pre class="highlight listingblock"><code class="plaintext language-plaintext">FT.SEARCH inventory * geofilter location -74.019929 40.749915 5 km"</code></pre></section>
 <section id="_querying_inventory_3"><h2>Querying Inventory</h2><div class="paragraph"><p>Regional availability levels</p></div>
 <pre class="highlight listingblock"><code class="plaintext language-plaintext">FT.AGGREGATE inventory
    "@sku:{02 93 13} @location:[-118.2 34.0 25 mi]"
